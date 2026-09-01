@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Eleni Vrana &mdash; Lecturer, Columbia University School of Professional Studies</title>
-<meta name="description" content="Eleni Vrana, Lecturer at the Columbia University School of Professional Studies. Twenty-eight years across procurement, contracts and the art market.">
+<title>Eleni Vrana &mdash; Part-Time Lecturer of Finance, Columbia University SPS</title>
+<meta name="description" content="Eleni Vrana, Part-Time Lecturer of Finance at the Columbia University School of Professional Studies. More than twenty-five years in corporate finance, at Sotheby's and at Columbia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
@@ -126,6 +126,17 @@ h2{font-family:var(--disp);font-weight:300;font-size:clamp(28px,3.6vw,46px);
 .edu span{font-family:var(--sans);font-size:14px;color:var(--mid)}
 @media(max-width:760px){.edu li{grid-template-columns:1fr;gap:4px}.edu .yr{font-size:16px}}
 
+.links{margin:0;padding:0;list-style:none;border-top:1px solid var(--rule)}
+.links li{border-bottom:1px solid var(--rule-soft)}
+.links a{display:grid;grid-template-columns:190px minmax(0,1fr) minmax(0,.8fr);
+  gap:8px clamp(18px,3vw,40px);align-items:baseline;padding:22px 0;text-decoration:none;
+  transition:color .18s ease}
+.links a:hover{color:var(--accent)}
+.links b{font-family:var(--disp);font-weight:400;font-size:clamp(19px,1.7vw,23px);line-height:1.3}
+.links .go{font-family:var(--sans);font-size:13.5px;color:var(--mid);letter-spacing:.01em}
+.links a:hover .go{color:var(--accent-lt)}
+@media(max-width:760px){.links a{grid-template-columns:1fr;gap:5px}}
+
 /* contact */
 .contact{background:var(--ink);color:var(--paper);border-top:0}
 .contact h2{color:#FFFFFF;max-width:20ch}
@@ -152,37 +163,55 @@ footer{padding:34px 0 60px;border-top:1px solid var(--rule)}
   <header class="top">
     <span class="wordmark">Eleni Vrana</span>
     <nav>
-      <a href="#record">The record</a>
       <a href="#teaching">Teaching</a>
-      <a href="#education">Education</a>
-      <a href="#beyond">Beyond the university</a>
+      <a href="#record">The record</a>
+      <a href="#about">About</a>
+      <a href="#book">The book</a>
+      <a href="#elsewhere">Elsewhere</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero" style="border-top:0">
-    <span class="lab">Columbia University &middot; New York</span>
+    <span class="lab">Columbia University School of Professional Studies &middot; New York</span>
     <h1>Eleni Vrana</h1>
-    <p class="role">Lecturer at the Columbia University School of Professional Studies, after twenty-eight years spent on the other side of the contract.</p>
+    <p class="role">Part-Time Lecturer of Finance, teaching the subject she has spent more than twenty-five years practising.</p>
     <ul class="facts">
-      <li><b>2016</b><span>Teaching at Columbia since</span></li>
-      <li><b>28</b><span>Years in practice</span></li>
-      <li><b>10</b><span>Years at Sotheby&rsquo;s</span></li>
+      <li><b>10</b><span>Academic years teaching at SPS</span></li>
+      <li><b>25+</b><span>Years in corporate finance</span></li>
+      <li><b>Sotheby&rsquo;s</b><span>Where the career began</span></li>
       <li><b>New York</b><span>Where she works</span></li>
     </ul>
   </section>
 </div>
 
 <div class="w">
+  <section id="teaching">
+    <div class="sec-head">
+      <h2>She teaches finance because she has spent a career doing it.</h2>
+      <p>Ten academic years as an adjunct lecturer at the Columbia University School of Professional Studies, taught alongside the corporate finance roles that supply the material.</p>
+    </div>
+    <div class="duo">
+      <div>
+        <p>Eleni Vrana is a <b>Part-Time Lecturer of Finance</b> at the Columbia University School of Professional Studies, where she teaches <b>Introduction to Finance</b> within the <b>Enterprise Risk Management</b> programme. She has lectured for the school for ten academic years.</p>
+        <p>The course is built on real-world examples and case studies rather than theory alone. That is possible because she was not teaching finance from a distance: for most of those ten years she was also working inside Columbia&rsquo;s own finance function, and the problems she brought into the classroom were the ones she had been handed that week.</p>
+      </div>
+      <div>
+        <p>Before Columbia she spent more than a decade at <b>Sotheby&rsquo;s in New York</b>, moving from credit analysis to client representation to account management between 1998 and 2008. It is an uncommon foundation for a finance career and a demanding one: at an auction house, valuation, terms and client relationships are inseparable, and a misjudgement is immediate and public.</p>
+        <p>Students in the Enterprise Risk Management programme are largely working professionals. They tend to be unforgiving about material that has never survived contact with a real balance sheet. That is the audience this course was built for.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="record">
     <div class="sec-head">
       <h2>The record, in order.</h2>
-      <p>Twenty-eight years across the art market, university procurement and the classroom. Every entry below is drawn from her published professional record.</p>
+      <p>More than twenty-five years across the art market, university finance and the classroom. Every entry below is drawn from her published professional record.</p>
     </div>
     <ol class="ledger">
       <li class="now rv">
         <span class="yr">2016 &ndash;</span>
-        <span class="ttl">Lecturer</span>
+        <span class="ttl">Part-Time Lecturer of Finance</span>
         <span class="org">Columbia University School of Professional Studies, New York</span>
       </li>
       <li class="rv">
@@ -213,32 +242,15 @@ footer{padding:34px 0 60px;border-top:1px solid var(--rule)}
     </ol>
   </section>
 
-  <section id="teaching">
-    <div class="sec-head">
-      <h2>She teaches what she spent a career doing.</h2>
-      <p>Nine years in the classroom at Columbia, overlapping almost entirely with the years she was still negotiating the university&rsquo;s contracts and running its purchasing categories.</p>
-    </div>
-    <div class="duo">
-      <div>
-        <p>Most people who teach procurement and contract management have either practised it or taught it. Eleni Vrana did both at once, and at the same institution. She joined the Columbia University School of Professional Studies as a Lecturer in <b>2016</b>, while serving as a Contract Officer for the university, and continued teaching through seven years as its Category Manager.</p>
-        <p>That overlap is the whole point. The contracts she was negotiating during the day were the material of the evening class. Students were not being taught a framework recalled from a decade earlier; they were being taught a practice that was still running.</p>
-      </div>
-      <div>
-        <p>Before Columbia she spent a decade at <b>Sotheby&rsquo;s</b> in New York, moving from Credit Analyst to Client Representative to Account Manager between 1998 and 2008. It is an unusual foundation for a procurement career, and a useful one: the auction house is a business where terms, valuation and client relationships are inseparable, and where the cost of a badly drawn agreement is immediate and public.</p>
-        <p class="lab" style="margin-top:26px;color:var(--accent)">Course detail to be supplied</p>
-        <p style="font-size:15px">Specific courses, semesters and student numbers can be added here once confirmed. Nothing has been assumed.</p>
-      </div>
-    </div>
-  </section>
-
   <section id="about">
     <div class="about-in">
       <div class="frame rv"><span>Photograph to be supplied</span></div>
       <div>
         <span class="lab" style="color:var(--accent)">About</span>
-        <h2 style="margin:16px 0 24px">A career built on the terms other people overlook.</h2>
-        <p style="color:var(--ink-2);line-height:1.78;margin:0 0 18px">A contract is the point at which an institution decides what it is actually willing to promise. Eleni Vrana has spent twenty-eight years at that point &mdash; first at Sotheby&rsquo;s, where the agreements sat between the house, the consignor and the buyer, then at Columbia, where they sat between a university and every supplier it depends on.</p>
-        <p style="color:var(--ink-2);line-height:1.78;margin:0">She holds an MBA from The George Washington University, a Master&rsquo;s Business Certificate in Finance and Management from Columbia, and a BS in Business Administration from the University of San Francisco. She was recognised by Marquis Who&rsquo;s Who in 2026 and has been featured in <i>Influential Women</i>.</p>
+        <h2 style="margin:16px 0 24px">Practice first. Then the classroom.</h2>
+        <p style="color:var(--ink-2);line-height:1.78;margin:0 0 18px">Eleni Vrana has more than twenty-five years of corporate finance experience. It began at Sotheby&rsquo;s in New York, where valuation, credit and client terms sit inside the same conversation, and continued at Columbia University, where she spent seventeen years in its finance and procurement functions as Contract Officer and then Category Manager.</p>
+        <p style="color:var(--ink-2);line-height:1.78;margin:0 0 18px">For ten of those years she was also teaching. That overlap is the reason her course works the way it does: the case studies are not historical, they are the work.</p>
+        <p style="color:var(--ink-2);line-height:1.78;margin:0">She holds an MBA from The George Washington University, a Master&rsquo;s Business Certificate in Finance and Management from Columbia University, and a BS in Business Administration from the University of San Francisco. She was recognised by Marquis Who&rsquo;s Who in 2026 and featured by <i>Influential Women</i> in July 2026.</p>
       </div>
     </div>
   </section>
@@ -255,35 +267,78 @@ footer{padding:34px 0 60px;border-top:1px solid var(--rule)}
     </ul>
   </section>
 
+  <section id="book">
+    <div class="sec-head">
+      <h2>A book, in progress.</h2>
+      <p>Announced in her <i>Influential Women</i> feature, July 2026.</p>
+    </div>
+    <div class="duo">
+      <div>
+        <p>Eleni Vrana is co-authoring a forthcoming book on women&rsquo;s success and happiness, built around the question of how to balance family, work and personal growth rather than choose between them.</p>
+        <p>It is the same subject her own career answers in practice: seventeen years inside a university&rsquo;s finance function, ten of them taught in the evenings, without treating either as the thing that had to give.</p>
+      </div>
+      <div>
+        <p style="font-family:var(--disp);font-weight:300;font-style:italic;font-size:clamp(21px,2.2vw,28px);line-height:1.4;color:var(--ink)">&ldquo;When someone does what they love, they never truly have to work.&rdquo;</p>
+        <p class="lab" style="margin-top:16px;color:var(--mid)">Career advice she was given, quoted in <i>Influential Women</i></p>
+        <p style="font-size:15px;margin-top:26px">Title, publisher and publication date to be added once confirmed.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="beyond">
     <div class="sec-head">
       <h2>Beyond the university.</h2>
-      <p>Two commitments outside the job, both of them about getting someone else further along than they would have managed alone.</p>
+      <p>Commitments outside the job, most of them about getting someone else further along than they would have managed alone.</p>
     </div>
     <div class="cards">
       <article class="rv">
         <span class="lab">Literacy</span>
         <h3>Read Ahead</h3>
-        <p>Volunteer with the reading and mentoring programme, which pairs adults with New York City public school students for weekly one-to-one sessions.</p>
+        <p>Volunteer with the reading and mentoring programme, which pairs adults with New York City public elementary school students for weekly one-to-one sessions.</p>
       </article>
       <article class="rv">
         <span class="lab">Mentoring</span>
         <h3>George Washington University</h3>
-        <p>Mentor to applicants of the MBA programme she completed in 1990.</p>
+        <p>Mentor to MBA applicants and international students at the programme she completed in 1990.</p>
       </article>
       <article class="rv">
         <span class="lab">Recognition</span>
         <h3>Marquis Who&rsquo;s Who, 2026</h3>
-        <p>Recognised for expertise in education. Also featured in <i>Influential Women</i>.</p>
+        <p>Recognised for expertise in education. Featured by <i>Influential Women</i> in July 2026.</p>
       </article>
     </div>
+  </section>
+
+  <section id="elsewhere">
+    <div class="sec-head">
+      <h2>Elsewhere.</h2>
+      <p>Her profile at Columbia, her professional network, and the published features.</p>
+    </div>
+    <ul class="links">
+      <li class="rv"><a href="https://sps.columbia.edu/person/eleni-vrana-0" target="_blank" rel="noopener noreferrer">
+        <span class="lab">Columbia University</span>
+        <b>Faculty profile, School of Professional Studies</b>
+        <span class="go">sps.columbia.edu &#8599;</span></a></li>
+      <li class="rv"><a href="https://www.linkedin.com/in/eleni-vrana-84b903140/" target="_blank" rel="noopener noreferrer">
+        <span class="lab">Professional network</span>
+        <b>LinkedIn</b>
+        <span class="go">linkedin.com &#8599;</span></a></li>
+      <li class="rv"><a href="https://www.einpresswire.com/article/928536792/influential-women-showcase-eleni-vrana-columbia-university-lecturer-inspiring-future-finance-professionals" target="_blank" rel="noopener noreferrer">
+        <span class="lab">Feature &middot; July 2026</span>
+        <b>Influential Women</b>
+        <span class="go">Inspiring Future Finance Professionals &#8599;</span></a></li>
+      <li class="rv"><a href="https://www.24-7pressrelease.com/press-release/535340/marquis-whos-who-honors-eleni-vrana-for-expertise-in-education" target="_blank" rel="noopener noreferrer">
+        <span class="lab">Recognition &middot; June 2026</span>
+        <b>Marquis Who&rsquo;s Who</b>
+        <span class="go">Honored for expertise in education &#8599;</span></a></li>
+    </ul>
   </section>
 </div>
 
 <section class="contact" id="contact">
   <div class="w">
     <h2>Speaking, teaching and advisory enquiries.</h2>
-    <p>For questions about courses, guest lectures, panels, or advisory work on procurement and contract management.</p>
+    <p>For questions about courses, guest lectures, panels, executive education, or advisory work in corporate finance.</p>
     <div class="slot">
       <span class="lab">Contact details to be confirmed</span>
       <b>Email address and preferred contact route to be added before this page is shared.</b>
@@ -294,7 +349,7 @@ footer{padding:34px 0 60px;border-top:1px solid var(--rule)}
 <div class="w">
   <footer>
     <div class="foot">
-      <span>Eleni Vrana &middot; New York</span>
+      <span>Eleni Vrana &middot; Part-Time Lecturer of Finance &middot; New York</span>
       <span>Draft for review</span>
     </div>
     <p class="note">This is an unpublished draft prepared for Eleni Vrana&rsquo;s review. It is not indexed by search engines and is not endorsed by, affiliated with, or produced on behalf of Columbia University or Sotheby&rsquo;s. Career facts are drawn from her published professional record and are shown for her verification. Nothing on this page has been added that she has not confirmed.</p>
