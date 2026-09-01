@@ -16,6 +16,7 @@
   --ink-2:#3A3F49;
   --mid:#5A606B;
   --rule:#D3D0C6;
+  --soft-rule:#E1DED5;
   --rule-soft:#DFDCD3;
   --accent:#1B3B6F;
   --accent-lt:#2E5490;
@@ -102,11 +103,28 @@ h2{font-family:var(--disp);font-weight:300;font-size:clamp(28px,3.6vw,46px);
 /* portrait + about */
 .about-in{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
   gap:clamp(26px,5vw,66px);align-items:start}
-@media(max-width:860px){.about-in{grid-template-columns:1fr;gap:30px}.frame{max-width:340px}}
-.frame{aspect-ratio:4/5;border:1px solid var(--rule);background:var(--paper-2);
-  display:flex;align-items:flex-end;justify-content:flex-start;padding:20px}
-.frame span{font-family:var(--sans);font-size:10.5px;font-weight:600;
-  letter-spacing:.17em;text-transform:uppercase;color:var(--mid)}
+@media(max-width:860px){.about-in{grid-template-columns:1fr;gap:30px}}
+/* Provenance plate. Stands in for the portrait until she supplies one, and is
+   built as an auction catalogue entry because that is where the career starts. */
+.plate{aspect-ratio:4/5;border:1px solid var(--rule);background:var(--card);
+  display:flex;flex-direction:column;justify-content:space-between;
+  padding:clamp(22px,2.6vw,32px);position:relative}
+.plate::before{content:"";position:absolute;inset:9px;border:1px solid var(--soft-rule);pointer-events:none}
+.plate .cap{font-family:var(--sans);font-size:9.5px;font-weight:600;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--mid);margin:0}
+.plate .nm{font-family:var(--disp);font-weight:300;font-size:clamp(27px,3vw,40px);
+  line-height:1.02;letter-spacing:-.02em;margin:clamp(14px,2vw,20px) 0 0;color:var(--ink)}
+.plate .prov{margin:clamp(18px,2.4vw,26px) 0 0;padding:0;list-style:none;
+  border-top:1px solid var(--soft-rule)}
+.plate .prov li{display:grid;grid-template-columns:58px minmax(0,1fr);gap:12px;
+  padding:9px 0;border-bottom:1px solid var(--soft-rule);align-items:baseline}
+.plate .prov li:last-child{border-bottom:0}
+.plate .prov .y{font-family:var(--disp);font-size:15px;font-variant-numeric:tabular-nums;color:var(--accent)}
+.plate .prov .p{font-family:var(--sans);font-size:11.5px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink-2);line-height:1.5}
+.plate .foot{margin:0;font-family:var(--sans);font-size:10.5px;letter-spacing:.08em;
+  color:var(--mid);line-height:1.6}
+@media(max-width:860px){.plate{max-width:360px;aspect-ratio:auto}}
 
 /* cards */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;
@@ -244,7 +262,18 @@ footer{padding:34px 0 60px;border-top:1px solid var(--rule)}
 
   <section id="about">
     <div class="about-in">
-      <div class="frame rv"><span>Photograph to be supplied</span></div>
+      <figure class="plate rv">
+        <div>
+          <p class="cap">Provenance</p>
+          <p class="nm">Eleni<br>Vrana</p>
+        </div>
+        <ul class="prov">
+          <li><span class="y">1998</span><span class="p">Sotheby&rsquo;s, New York</span></li>
+          <li><span class="y">2008</span><span class="p">Columbia University</span></li>
+          <li><span class="y">2016</span><span class="p">School of Professional Studies</span></li>
+        </ul>
+        <figcaption class="foot">Held in place of a photograph, until one is supplied.</figcaption>
+      </figure>
       <div>
         <span class="lab" style="color:var(--accent)">About</span>
         <h2 style="margin:16px 0 24px">Practice first. Then the classroom.</h2>
