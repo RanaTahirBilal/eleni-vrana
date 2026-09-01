@@ -2,406 +2,425 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Eleni Vrana &mdash; Part-Time Lecturer of Finance, Columbia University SPS</title>
-<meta name="description" content="Eleni Vrana, Part-Time Lecturer of Finance at the Columbia University School of Professional Studies. More than twenty-five years in corporate finance, at Sotheby's and at Columbia.">
+<title>Eleni Vrana &mdash; Part-Time Lecturer of Finance, Columbia University</title>
+<meta name="description" content="Eleni Vrana, Part-Time Lecturer of Finance at the Columbia University School of Professional Studies. Over twenty-five years in corporate finance, ten of them taught in the evenings.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#EFEDE6;
-  --paper-2:#E7E4DB;
-  --card:#FBFAF7;
-  --ink:#15171C;
-  --ink-2:#3A3F49;
-  --mid:#5A606B;
-  --rule:#D3D0C6;
-  --soft-rule:#E1DED5;
-  --rule-soft:#DFDCD3;
-  --accent:#1B3B6F;
-  --accent-lt:#2E5490;
-  --disp:"Newsreader",Georgia,"Times New Roman",serif;
+  --deep:#0C2A1F;        /* the field */
+  --deep-2:#08211A;
+  --deep-3:#113828;
+  --brass:#C6A153;
+  --brass-lt:#DCBE7C;
+  --brass-dk:#7E5F14;   /* brass on paper: #C6A153 measures 2.14:1 on ivory and fails AA */
+  --ivory:#F3F0E7;
+  --ivory-2:#DCD8CC;
+  --ivory-3:#B9B5A8;
+  --paper:#F3F0E7;
+  --paper-2:#EAE6DA;
+  --ink:#14180F;
+  --ink-2:#3A4034;
+  --mid:#5A6152;
+  --rule:#CFC9B8;
+  --rule-fine:#DED9CB;
+  --hair:rgba(20,24,15,.09);
+  --disp:"Bodoni Moda",Didot,"Times New Roman",serif;
   --sans:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --page:1180px;
-  --gutter:clamp(20px,4.4vw,56px);
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --page:1280px;
+  --gut:clamp(20px,4.6vw,64px);
+  --ease:cubic-bezier(.22,.61,.36,1);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{
-  margin:0; background:var(--paper); color:var(--ink);
-  font-family:var(--sans); font-size:17px; line-height:1.65;
-  -webkit-font-smoothing:antialiased; overflow-x:clip;
-}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;
+  font-feature-settings:"kern" 1;overflow-x:clip}
 img{max-width:100%;height:auto;display:block}
-p,li,h1,h2,h3,dt,dd{overflow-wrap:break-word}
 a{color:inherit}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.w{max-width:var(--page);margin:0 auto;padding:0 var(--gutter)}
-.lab{
-  font-family:var(--sans);font-size:11px;font-weight:600;
-  letter-spacing:.2em;text-transform:uppercase;color:var(--mid);
-}
+a:focus-visible{outline:1.5px solid var(--brass);outline-offset:4px;border-radius:1px}
+p,li,h1,h2,h3,dt,dd{overflow-wrap:break-word}
+.w{max-width:var(--page);margin:0 auto;padding:0 var(--gut)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.sc{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase}
 
-/* header */
-.top{display:flex;flex-wrap:wrap;gap:14px 30px;align-items:baseline;justify-content:space-between;
-  padding:24px 0 20px;border-bottom:1px solid var(--rule)}
-.wordmark{font-family:var(--disp);font-size:19px;letter-spacing:.01em}
-.top nav{display:flex;flex-wrap:wrap;gap:8px 26px}
-.top nav a{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--mid);text-decoration:none;padding:4px 0;
-  border-bottom:1px solid transparent;transition:color .18s ease,border-color .18s ease}
-.top nav a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+/* ══ masthead ══ */
+.mast{position:relative;z-index:6;background:var(--deep);
+  display:flex;flex-wrap:wrap;gap:14px 30px;align-items:center;justify-content:space-between;
+  padding:22px var(--gut)}
+.monogram{display:flex;align-items:center;gap:13px;text-decoration:none}
+.monogram svg{display:block;flex:0 0 auto}
+.monogram span{font-family:var(--disp);font-size:19px;letter-spacing:.03em;color:var(--ivory)}
+.mast nav{display:flex;flex-wrap:wrap;gap:8px 30px}
+.mast nav a{position:relative;font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--ivory-2);text-decoration:none;padding:6px 0}
+.mast nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;
+  background:var(--brass);transition:right .42s var(--ease)}
+.mast nav a:hover{color:var(--ivory)}
+.mast nav a:hover::after{right:0}
 
-/* hero */
-.hero{padding:clamp(52px,8vw,104px) 0 clamp(40px,5vw,64px)}
-.hero .lab{display:block;margin:0 0 clamp(20px,2.6vw,30px);color:var(--accent)}
-h1{font-family:var(--disp);font-weight:300;font-size:clamp(46px,8.4vw,112px);
-  line-height:.96;letter-spacing:-.022em;margin:0 0 clamp(24px,3vw,34px);color:var(--ink)}
-.role{font-family:var(--disp);font-weight:300;font-style:italic;
-  font-size:clamp(21px,2.4vw,31px);line-height:1.38;color:var(--ink-2);
-  max-width:26ch;margin:0 0 clamp(30px,4vw,44px)}
-.facts{display:flex;flex-wrap:wrap;gap:16px clamp(26px,4vw,58px);
-  margin:0;padding:clamp(20px,2.4vw,26px) 0 0;list-style:none;border-top:1px solid var(--rule)}
-.facts li{display:flex;flex-direction:column;gap:5px}
-.facts b{font-family:var(--disp);font-weight:400;font-size:clamp(25px,2.4vw,32px);
-  line-height:1;font-variant-numeric:tabular-nums;color:var(--ink)}
-.facts span{font-family:var(--sans);font-size:10.5px;font-weight:600;
-  letter-spacing:.17em;text-transform:uppercase;color:var(--mid)}
+/* ══ the field ══ */
+.field{position:relative;background:var(--deep);overflow:hidden;
+  min-height:min(90vh,820px);display:flex;align-items:center}
+.field::before{content:"";position:absolute;inset:-8%;
+  background:
+    radial-gradient(52% 62% at 22% 26%, rgba(28,86,62,.62) 0%, rgba(12,42,31,0) 64%),
+    radial-gradient(46% 56% at 84% 76%, rgba(18,60,44,.72) 0%, rgba(12,42,31,0) 62%);
+  animation:drift 34s ease-in-out infinite alternate;will-change:transform}
+@keyframes drift{0%{transform:scale(1) translate3d(0,0,0)}100%{transform:scale(1.07) translate3d(-1.6%,-1.1%,0)}}
+/* hairline column grid, the kind you only notice if you look */
+.field::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:repeating-linear-gradient(to right,rgba(243,240,231,.055) 0 1px,transparent 1px calc(100% / 12))}
+.field-in{position:relative;z-index:2;width:100%;max-width:var(--page);margin:0 auto;
+  padding:clamp(48px,6vw,84px) var(--gut);
+  display:grid;grid-template-columns:minmax(0,1fr) clamp(240px,26vw,340px);
+  gap:clamp(28px,5vw,72px);align-items:end}
+@media(max-width:900px){.field-in{grid-template-columns:1fr;gap:38px}}
 
-/* generic section */
-section{padding:clamp(52px,7vw,96px) 0;border-top:1px solid var(--rule)}
-.sec-head{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.5fr);
-  gap:clamp(22px,4vw,60px);align-items:start;margin:0 0 clamp(34px,4.4vw,54px)}
-@media(max-width:820px){.sec-head{grid-template-columns:1fr;gap:16px}}
-h2{font-family:var(--disp);font-weight:300;font-size:clamp(28px,3.6vw,46px);
-  line-height:1.1;letter-spacing:-.016em;margin:0;max-width:18ch;color:var(--ink)}
-.sec-head p{margin:0;color:var(--mid);font-size:16.5px;line-height:1.7;max-width:56ch}
+.eyebrow{margin:0 0 clamp(22px,2.6vw,32px);color:var(--brass)}
+h1{margin:0;font-family:var(--disp);font-weight:400;color:var(--ivory);
+  font-size:clamp(46px,7.4vw,104px);line-height:.94;letter-spacing:-.018em;max-width:13ch}
+h1 em{font-style:italic;color:var(--brass-lt)}
+.field-sub{margin:clamp(26px,3vw,38px) 0 0;color:var(--ivory-2);
+  font-size:clamp(16px,1.5vw,19.5px);line-height:1.72;max-width:50ch}
+.field-rule{margin:clamp(28px,3.2vw,40px) 0 0;padding-top:22px;border-top:1px solid rgba(243,240,231,.2)}
+.field-rule .sc{color:var(--ivory-3);display:block}
 
-/* ledger */
-.ledger{margin:0;padding:0;list-style:none;border-top:1px solid var(--rule)}
-.ledger li{display:grid;grid-template-columns:170px minmax(0,1fr) minmax(0,.85fr);
-  gap:10px clamp(18px,3vw,40px);padding:22px 0;border-bottom:1px solid var(--rule-soft);align-items:baseline}
-.ledger .yr{font-family:var(--disp);font-size:19px;font-variant-numeric:tabular-nums;
-  color:var(--accent);letter-spacing:.01em}
-.ledger .ttl{font-family:var(--disp);font-size:clamp(19px,1.7vw,23px);line-height:1.3;color:var(--ink)}
-.ledger .org{font-family:var(--sans);font-size:14px;color:var(--mid);line-height:1.6}
-.ledger li.now .ttl{color:var(--accent)}
-@media(max-width:760px){
-  .ledger li{grid-template-columns:1fr;padding:20px 0;gap:5px}
-  .ledger .yr{font-size:16px}
-}
+.plate{position:relative;aspect-ratio:4/5;background:rgba(243,240,231,.05);
+  border:1px solid rgba(243,240,231,.2);display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:24px}
+.plate::before{content:"";position:absolute;inset:11px;border:1px solid rgba(198,161,83,.34);pointer-events:none}
+.plate .in{position:relative;z-index:1;max-width:24ch}
+.plate .k{display:block;color:var(--brass);margin-bottom:12px}
+.plate .t{display:block;font-family:var(--disp);font-size:20px;line-height:1.24;color:var(--ivory);margin-bottom:10px}
+.plate .s{display:block;font-family:var(--mono);font-size:10.5px;line-height:1.7;color:var(--ivory-3)}
 
-/* two-column prose */
-.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-  gap:clamp(24px,4vw,64px)}
+/* ══ figures ══ */
+.figs{background:var(--deep-2);border-top:1px solid rgba(243,240,231,.13)}
+.figs-in{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));max-width:var(--page);margin:0 auto}
+.figs-in>div{padding:clamp(26px,3.2vw,40px) clamp(14px,2vw,28px);
+  border-right:1px solid rgba(243,240,231,.13)}
+.figs-in>div:first-child{padding-left:var(--gut)}
+.figs-in>div:last-child{border-right:0;padding-right:var(--gut)}
+.figs b{display:block;font-family:var(--disp);font-weight:400;font-size:clamp(30px,3.6vw,46px);
+  line-height:1;color:var(--ivory);margin:0 0 12px;font-variant-numeric:tabular-nums}
+.figs .sc{display:block;color:var(--ivory-3);line-height:1.6}
+@media(max-width:860px){.figs-in{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .figs-in>div{border-bottom:1px solid rgba(243,240,231,.13)}
+  .figs-in>div:nth-child(2){border-right:0}
+  .figs-in>div:nth-child(3){padding-left:var(--gut)}
+  .figs-in>div:nth-child(n+3){border-bottom:0}}
+@media(max-width:470px){.figs-in{grid-template-columns:1fr}
+  .figs-in>div{border-right:0;padding-left:var(--gut)!important;padding-right:var(--gut)!important}
+  .figs-in>div:nth-child(3){border-bottom:1px solid rgba(243,240,231,.13)}}
+
+/* ══ chapters ══ */
+.ch{padding:clamp(60px,8vw,124px) 0;position:relative}
+.ch + .ch{border-top:1px solid var(--rule)}
+.ch-in{display:grid;grid-template-columns:clamp(78px,9vw,124px) minmax(0,1fr);
+  gap:clamp(18px,3.4vw,48px);max-width:var(--page);margin:0 auto;padding:0 var(--gut)}
+@media(max-width:760px){.ch-in{grid-template-columns:1fr;gap:14px}}
+.ch-num{font-family:var(--disp);font-size:clamp(15px,1.4vw,18px);color:var(--brass-dk);
+  letter-spacing:.06em;padding-top:.5em}
+@media(min-width:761px){.ch-num{position:sticky;top:28px}}
+h2{margin:0 0 24px;font-family:var(--disp);font-weight:400;font-size:clamp(30px,4.4vw,58px);
+  line-height:1.02;letter-spacing:-.016em;max-width:17ch}
+h2 em{font-style:italic;color:var(--brass-dk)}
+.ch p{margin:0 0 19px;color:var(--ink-2);line-height:1.78;max-width:62ch}
+.ch p:last-child{margin-bottom:0}
+.ch b{font-weight:600;color:var(--ink)}
+.lede{font-size:clamp(18px,1.7vw,21px);line-height:1.68;color:var(--ink)!important;max-width:56ch}
+
+/* hanging quote, the detail nobody names but everybody feels */
+.quote{margin:0 0 14px;font-family:var(--disp);font-style:italic;font-weight:400;
+  font-size:clamp(25px,3.2vw,42px);line-height:1.22;letter-spacing:-.012em;
+  max-width:20ch;text-indent:-.42em}
+.attrib{display:block;color:var(--mid);margin:0 0 30px}
+
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(22px,3.6vw,58px)}
 @media(max-width:820px){.duo{grid-template-columns:1fr}}
-.duo p{margin:0 0 18px;color:var(--ink-2);line-height:1.78}
-.duo p:last-child{margin-bottom:0}
-.duo p b{font-weight:600;color:var(--ink)}
 
-/* portrait + about */
-.about-in{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
-  gap:clamp(26px,5vw,66px);align-items:start}
-@media(max-width:860px){.about-in{grid-template-columns:1fr;gap:30px}}
-/* Provenance plate. Stands in for the portrait until she supplies one, and is
-   built as an auction catalogue entry because that is where the career starts. */
-.plate{aspect-ratio:4/5;border:1px solid var(--rule);background:var(--card);
-  display:flex;flex-direction:column;justify-content:space-between;
-  padding:clamp(22px,2.6vw,32px);position:relative}
-.plate::before{content:"";position:absolute;inset:9px;border:1px solid var(--soft-rule);pointer-events:none}
-.plate .cap{font-family:var(--sans);font-size:9.5px;font-weight:600;letter-spacing:.24em;
-  text-transform:uppercase;color:var(--mid);margin:0}
-.plate .nm{font-family:var(--disp);font-weight:300;font-size:clamp(27px,3vw,40px);
-  line-height:1.02;letter-spacing:-.02em;margin:clamp(14px,2vw,20px) 0 0;color:var(--ink)}
-.plate .prov{margin:clamp(18px,2.4vw,26px) 0 0;padding:0;list-style:none;
-  border-top:1px solid var(--soft-rule)}
-.plate .prov li{display:grid;grid-template-columns:58px minmax(0,1fr);gap:12px;
-  padding:9px 0;border-bottom:1px solid var(--soft-rule);align-items:baseline}
-.plate .prov li:last-child{border-bottom:0}
-.plate .prov .y{font-family:var(--disp);font-size:15px;font-variant-numeric:tabular-nums;color:var(--accent)}
-.plate .prov .p{font-family:var(--sans);font-size:11.5px;letter-spacing:.06em;
-  text-transform:uppercase;color:var(--ink-2);line-height:1.5}
-.plate .foot{margin:0;font-family:var(--sans);font-size:10.5px;letter-spacing:.08em;
-  color:var(--mid);line-height:1.6}
-@media(max-width:860px){.plate{max-width:360px;aspect-ratio:auto}}
+/* ══ record ══ */
+.rec{margin:6px 0 0;padding:0;list-style:none;border-top:1px solid var(--rule)}
+.rec li{display:grid;grid-template-columns:clamp(104px,11vw,140px) minmax(0,1fr);
+  gap:6px clamp(16px,2.6vw,38px);padding:22px 0;border-bottom:1px solid var(--rule-fine);
+  align-items:baseline;transition:background .38s var(--ease)}
+.rec li:hover{background:var(--paper-2)}
+.rec .yr{font-family:var(--mono);font-size:13px;color:var(--brass-dk);font-variant-numeric:tabular-nums}
+.rec .role{display:block;font-family:var(--disp);font-size:clamp(20px,2vw,27px);line-height:1.16}
+.rec .org{display:block;margin-top:6px;font-size:14.5px;color:var(--mid);line-height:1.58;max-width:56ch}
+.rec li.now .role{color:var(--brass-dk)}
+@media(max-width:640px){.rec li{grid-template-columns:1fr;gap:3px;padding:19px 0}}
 
-/* cards */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;
-  background:var(--rule);border:1px solid var(--rule)}
-.cards article{background:var(--card);padding:clamp(24px,2.6vw,32px)}
-.cards h3{font-family:var(--disp);font-weight:400;font-size:21px;line-height:1.25;
-  margin:0 0 10px;color:var(--ink)}
-.cards p{margin:0;color:var(--mid);font-size:15px;line-height:1.7}
-.cards .lab{display:block;margin:0 0 14px;color:var(--accent)}
+/* ══ tiles ══ */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);margin:6px 0 0}
+.tiles article{background:var(--paper);padding:clamp(24px,2.6vw,32px);transition:background .38s var(--ease)}
+.tiles article:hover{background:#FFFDF7}
+.tiles .sc{display:block;color:var(--brass-dk);margin:0 0 15px}
+.tiles h3{margin:0 0 8px;font-family:var(--disp);font-weight:400;font-size:22px;line-height:1.18}
+.tiles p{margin:0;color:var(--mid);font-size:14.5px;line-height:1.66}
 
-/* education */
-.edu{margin:0;padding:0;list-style:none;border-top:1px solid var(--rule)}
-.edu li{display:grid;grid-template-columns:170px minmax(0,1fr);gap:10px clamp(18px,3vw,40px);
-  padding:20px 0;border-bottom:1px solid var(--rule-soft);align-items:baseline}
-.edu .yr{font-family:var(--disp);font-size:19px;font-variant-numeric:tabular-nums;color:var(--accent)}
-.edu b{font-family:var(--disp);font-weight:400;font-size:clamp(18px,1.6vw,21px);display:block;line-height:1.35}
-.edu span{font-family:var(--sans);font-size:14px;color:var(--mid)}
-@media(max-width:760px){.edu li{grid-template-columns:1fr;gap:4px}.edu .yr{font-size:16px}}
+/* ══ links ══ */
+.links{margin:6px 0 0;padding:0;list-style:none;border-top:1px solid var(--rule)}
+.links li{border-bottom:1px solid var(--rule-fine)}
+.links a{display:grid;grid-template-columns:clamp(150px,16vw,210px) minmax(0,1fr) auto;
+  gap:5px clamp(16px,3vw,40px);align-items:baseline;padding:22px 0;text-decoration:none;
+  transition:color .3s var(--ease),padding-left .38s var(--ease)}
+.links a:hover{color:var(--brass-dk);padding-left:10px}
+.links .sc{color:var(--mid)}
+.links a:hover .sc{color:var(--brass-dk)}
+.links b{font-family:var(--disp);font-weight:400;font-size:clamp(19px,1.8vw,24px);line-height:1.18}
+.links .go{font-family:var(--mono);font-size:12px;color:var(--mid);white-space:nowrap}
+.links a:hover .go{color:var(--brass-dk)}
+@media(max-width:760px){.links a{grid-template-columns:1fr;gap:5px}.links a:hover{padding-left:0}}
 
-.links{margin:0;padding:0;list-style:none;border-top:1px solid var(--rule)}
-.links li{border-bottom:1px solid var(--rule-soft)}
-.links a{display:grid;grid-template-columns:190px minmax(0,1fr) minmax(0,.8fr);
-  gap:8px clamp(18px,3vw,40px);align-items:baseline;padding:22px 0;text-decoration:none;
-  transition:color .18s ease}
-.links a:hover{color:var(--accent)}
-.links b{font-family:var(--disp);font-weight:400;font-size:clamp(19px,1.7vw,23px);line-height:1.3}
-.links .go{font-family:var(--sans);font-size:13.5px;color:var(--mid);letter-spacing:.01em}
-.links a:hover .go{color:var(--accent-lt)}
-@media(max-width:760px){.links a{grid-template-columns:1fr;gap:5px}}
+/* ══ contact ══ */
+.contact{background:var(--deep);color:var(--ivory);padding:clamp(58px,7.4vw,110px) 0}
+.contact h2{color:var(--ivory)}
+.contact h2 em{color:var(--brass-lt)}
+.contact .ch-num{color:var(--brass)!important}
+.contact .lede{color:var(--ivory-2)!important}
+.c-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,60px);margin-top:36px}
+@media(max-width:820px){.c-grid{grid-template-columns:1fr}}
+.contact dl{margin:0;border-top:1px solid rgba(243,240,231,.24)}
+.contact dl>div{display:grid;grid-template-columns:clamp(110px,13vw,150px) minmax(0,1fr);
+  gap:14px;padding:15px 0;border-bottom:1px solid rgba(243,240,231,.13)}
+.contact dt{color:var(--ivory-3);padding-top:3px}
+.contact dd{margin:0;color:var(--ivory);font-size:15.5px}
+.c-note{border:1px solid rgba(198,161,83,.42);padding:28px;position:relative;background:rgba(243,240,231,.04)}
+.c-note b{display:block;font-family:var(--disp);font-weight:400;font-size:24px;line-height:1.22;
+  color:var(--ivory);margin:0 0 13px}
+.c-note p{margin:0;color:var(--ivory-2);font-size:14.5px;line-height:1.72}
 
-/* contact */
-.contact{background:var(--ink);color:var(--paper);border-top:0}
-.contact h2{color:#FFFFFF;max-width:20ch}
-.contact p{color:rgba(239,237,230,.78);max-width:52ch;font-size:17px;line-height:1.75;margin:20px 0 0}
-.slot{margin-top:clamp(30px,3.6vw,42px);padding-top:26px;border-top:1px solid rgba(239,237,230,.22)}
-.slot .lab{color:rgba(239,237,230,.66);display:block;margin-bottom:10px}
-.slot b{font-family:var(--disp);font-weight:300;font-size:clamp(22px,2.4vw,30px);color:#FFFFFF}
-
-footer{padding:34px 0 60px;border-top:1px solid var(--rule)}
+footer{background:var(--deep-2);color:var(--ivory-3);padding:34px 0 60px}
 .foot{display:flex;flex-wrap:wrap;gap:12px 30px;justify-content:space-between;align-items:baseline}
-.foot span{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--mid)}
-.note{margin:22px 0 0;font-size:13px;line-height:1.7;color:var(--mid);max-width:74ch}
+.disc{margin:22px 0 0;font-size:12.5px;line-height:1.75;color:rgba(185,181,168,.9);max-width:84ch}
 
-/* reveal */
-.js-rv .rv{opacity:0;transform:translateY(12px)}
-.js-rv .rv.in{opacity:1;transform:none;transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.25,1)}
-@media(prefers-reduced-motion:reduce){.js-rv .rv,.js-rv .rv.in{opacity:1;transform:none;transition:none}}
+/* ══ motion: one orchestrated sequence, not scattered fades ══ */
+.lift{opacity:0;transform:translateY(26px)}
+.js .lift{animation:lift 1.05s var(--ease) forwards;animation-delay:var(--d,0s)}
+@keyframes lift{to{opacity:1;transform:none}}
+.js-rv .rv{opacity:0;transform:translateY(18px)}
+.js-rv .rv.in{opacity:1;transform:none;
+  transition:opacity .82s var(--ease),transform .82s var(--ease)}
+.rail{position:fixed;top:0;left:0;height:2px;width:0;z-index:20;
+  background:linear-gradient(90deg,var(--brass),var(--brass-lt));transition:width .12s linear}
+@media(prefers-reduced-motion:reduce){
+  .field::before{animation:none}
+  .lift,.js .lift{opacity:1;transform:none;animation:none}
+  .js-rv .rv,.js-rv .rv.in{opacity:1;transform:none;transition:none}
+  .rail{display:none}
+  .rec li,.tiles article,.links a{transition:none}
+}
 </style>
 </head>
 <body>
+<div class="rail" id="rail" aria-hidden="true"></div>
 
-<div class="w">
-  <header class="top">
-    <span class="wordmark">Eleni Vrana</span>
-    <nav>
-      <a href="#teaching">Teaching</a>
-      <a href="#record">The record</a>
-      <a href="#about">About</a>
-      <a href="#book">The book</a>
-      <a href="#elsewhere">Elsewhere</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero" style="border-top:0">
-    <span class="lab">Columbia University School of Professional Studies &middot; New York</span>
-    <h1>Eleni Vrana</h1>
-    <p class="role">Part-Time Lecturer of Finance, teaching the subject she has spent more than twenty-five years practising.</p>
-    <ul class="facts">
-      <li><b>10</b><span>Academic years teaching at SPS</span></li>
-      <li><b>25+</b><span>Years in corporate finance</span></li>
-      <li><b>Sotheby&rsquo;s</b><span>Where the career began</span></li>
-      <li><b>New York</b><span>Where she works</span></li>
-    </ul>
-  </section>
+<div class="mast">
+  <a class="monogram" href="#top">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+      <rect x="0.6" y="0.6" width="32.8" height="32.8" fill="none" stroke="#C6A153" stroke-width="1.2"/>
+      <path d="M10 23V11h9M10 17h7M10 23h9" fill="none" stroke="#F3F0E7" stroke-width="1.5"/>
+      <path d="M23.4 11.8v10.4" stroke="#C6A153" stroke-width="1.2"/>
+    </svg>
+    <span>Eleni Vrana</span>
+  </a>
+  <nav>
+    <a href="#book">The Book</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#record">The Record</a>
+    <a href="#recognition">Recognition</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </div>
 
-<div class="w">
-  <section id="teaching">
-    <div class="sec-head">
-      <h2>She teaches finance because she has spent a career doing it.</h2>
-      <p>Ten academic years as an adjunct lecturer at the Columbia University School of Professional Studies, taught alongside the corporate finance roles that supply the material.</p>
-    </div>
-    <div class="duo">
-      <div>
-        <p>Eleni Vrana is a <b>Part-Time Lecturer of Finance</b> at the Columbia University School of Professional Studies, where she teaches <b>Introduction to Finance</b> within the <b>Enterprise Risk Management</b> programme. She has lectured for the school for ten academic years.</p>
-        <p>The course is built on real-world examples and case studies rather than theory alone. That is possible because she was not teaching finance from a distance: for most of those ten years she was also working inside Columbia&rsquo;s own finance function, and the problems she brought into the classroom were the ones she had been handed that week.</p>
-      </div>
-      <div>
-        <p>Before Columbia she held several financial leadership positions at <b>Sotheby&rsquo;s New York</b>, moving from credit analysis to client representation to account management. In her last role there she was an Account Manager, handling part of the financial aspects of all of the New York auctions. It is an uncommon foundation for a finance career and a demanding one: at an auction house, valuation, terms and client relationships are inseparable, and a misjudgement is immediate and public.</p>
-        <p>Students in the Enterprise Risk Management programme are largely working professionals. They tend to be unforgiving about material that has never survived contact with a real balance sheet. That is the audience this course was built for.</p>
+<div class="field" id="top">
+  <div class="field-in">
+    <div>
+      <p class="sc eyebrow lift" style="--d:.12s">Columbia University &middot; School of Professional Studies</p>
+      <h1 class="lift" style="--d:.3s">She taught the course. She also <em>did the job.</em></h1>
+      <p class="field-sub lift" style="--d:.56s">For ten academic years Eleni Vrana has taught Introduction to Finance at Columbia. For most of them she was also working inside Columbia&rsquo;s own finance function. The case studies were not historical. They were that week&rsquo;s work.</p>
+      <div class="field-rule lift" style="--d:.74s">
+        <span class="sc">Part-Time Lecturer of Finance &nbsp;&middot;&nbsp; New York</span>
       </div>
     </div>
-  </section>
-
-  <section id="record">
-    <div class="sec-head">
-      <h2>The record, in order.</h2>
-      <p>More than twenty-five years across the art market, university finance and the classroom. Every entry below is drawn from her published professional record.</p>
-    </div>
-    <ol class="ledger">
-      <li class="now rv">
-        <span class="yr">2016 &ndash;</span>
-        <span class="ttl">Part-Time Lecturer of Finance</span>
-        <span class="org">Columbia University School of Professional Studies, New York</span>
-      </li>
-      <li class="rv">
-        <span class="yr">2018 &ndash; 2025</span>
-        <span class="ttl">Category Manager</span>
-        <span class="org">Columbia University in the City of New York</span>
-      </li>
-      <li class="rv">
-        <span class="yr">2008 &ndash; 2018</span>
-        <span class="ttl">Contract Officer</span>
-        <span class="org">Columbia University in the City of New York</span>
-      </li>
-      <li class="rv">
-        <span class="yr">2004 &ndash; 2008</span>
-        <span class="ttl">Account Manager</span>
-        <span class="org">Sotheby&rsquo;s, New York</span>
-      </li>
-      <li class="rv">
-        <span class="yr">1999 &ndash; 2004</span>
-        <span class="ttl">Client Representative</span>
-        <span class="org">Sotheby&rsquo;s</span>
-      </li>
-      <li class="rv">
-        <span class="yr">1998 &ndash; 1999</span>
-        <span class="ttl">Credit Analyst</span>
-        <span class="org">Sotheby&rsquo;s</span>
-      </li>
-    </ol>
-  </section>
-
-  <section id="about">
-    <div class="about-in">
-      <figure class="plate rv">
-        <div>
-          <p class="cap">Provenance</p>
-          <p class="nm">Eleni<br>Vrana</p>
-        </div>
-        <ul class="prov">
-          <li><span class="y">1998</span><span class="p">Sotheby&rsquo;s, New York</span></li>
-          <li><span class="y">2008</span><span class="p">Columbia University</span></li>
-          <li><span class="y">2016</span><span class="p">School of Professional Studies</span></li>
-        </ul>
-        <figcaption class="foot">Held in place of a photograph, until one is supplied.</figcaption>
-      </figure>
-      <div>
-        <span class="lab" style="color:var(--accent)">About</span>
-        <h2 style="margin:16px 0 24px">Practice first. Then the classroom.</h2>
-        <p style="color:var(--ink-2);line-height:1.78;margin:0 0 18px">Eleni Vrana has more than twenty-five years of corporate finance experience. It began at Sotheby&rsquo;s in New York, where valuation, credit and client terms sit inside the same conversation, and continued at Columbia University, where she spent seventeen years in its finance and procurement functions as Contract Officer and then Category Manager.</p>
-        <p style="color:var(--ink-2);line-height:1.78;margin:0 0 18px">For ten of those years she was also teaching. That overlap is the reason her course works the way it does: the case studies are not historical, they are the work.</p>
-        <p style="color:var(--ink-2);line-height:1.78;margin:0">She holds an MBA from The George Washington University, a Master&rsquo;s Business Certificate in Finance and Management from Columbia University, and a BS in Business Administration from the University of San Francisco. She was recognised by Marquis Who&rsquo;s Who in 2026 and featured by <i>Influential Women</i> in July 2026.</p>
+    <figure class="plate lift" style="--d:.9s;margin:0">
+      <div class="in">
+        <span class="sc k">Plate I</span>
+        <span class="t">Portrait</span>
+        <span class="s">4:5 &middot; 1200 &times; 1500 minimum<br>Supplied by her, or licensed</span>
       </div>
-    </div>
-  </section>
-
-  <section id="education">
-    <div class="sec-head">
-      <h2>Education.</h2>
-      <p>Three degrees across finance, management and business administration, the most recent taken while already working at Columbia.</p>
-    </div>
-    <ul class="edu">
-      <li class="rv"><span class="yr">2014</span><div><b>Master&rsquo;s Business Certificate, Finance and Management</b><span>Columbia University</span></div></li>
-      <li class="rv"><span class="yr">1990</span><div><b>Master of Business Administration</b><span>The George Washington University</span></div></li>
-      <li class="rv"><span class="yr">1988</span><div><b>Bachelor of Science, Business Administration</b><span>University of San Francisco</span></div></li>
-    </ul>
-  </section>
-
-  <section id="book">
-    <div class="sec-head">
-      <h2>A book, in progress.</h2>
-      <p>Announced in her <i>Influential Women</i> feature, July 2026.</p>
-    </div>
-    <div class="duo">
-      <div>
-        <p>Eleni Vrana is co-authoring a forthcoming book on women&rsquo;s success and happiness, built around the question of how to balance family, work and personal growth rather than choose between them.</p>
-        <p>It is the same subject her own career answers in practice: seventeen years inside a university&rsquo;s finance function, ten of them taught in the evenings, without treating either as the thing that had to give.</p>
-      </div>
-      <div>
-        <p style="font-family:var(--disp);font-weight:300;font-style:italic;font-size:clamp(21px,2.2vw,28px);line-height:1.4;color:var(--ink)">&ldquo;When someone does what they love, they never truly have to work.&rdquo;</p>
-        <p class="lab" style="margin-top:16px;color:var(--mid)">Career advice she was given, quoted in <i>Influential Women</i></p>
-        <p style="font-size:15px;margin-top:26px">Title, publisher and publication date to be added once confirmed.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="beyond">
-    <div class="sec-head">
-      <h2>Beyond the university.</h2>
-      <p>Commitments outside the job, most of them about getting someone else further along than they would have managed alone.</p>
-    </div>
-    <div class="cards">
-      <article class="rv">
-        <span class="lab">Literacy</span>
-        <h3>Read Ahead</h3>
-        <p>Volunteer with the reading and mentoring programme, which pairs adults with New York City public elementary school students for weekly one-to-one sessions.</p>
-      </article>
-      <article class="rv">
-        <span class="lab">Mentoring</span>
-        <h3>George Washington University</h3>
-        <p>Applied to mentor international MBA students at The George Washington University, the programme she completed in 1990.</p>
-      </article>
-      <article class="rv">
-        <span class="lab">Recognition</span>
-        <h3>Marquis Who&rsquo;s Who, 2026</h3>
-        <p>Recognised for expertise in education. Featured by <i>Influential Women</i> in July 2026.</p>
-      </article>
-    </div>
-  </section>
-
-  <section id="elsewhere">
-    <div class="sec-head">
-      <h2>Elsewhere.</h2>
-      <p>Her profile at Columbia, her professional network, and the published features.</p>
-    </div>
-    <ul class="links">
-      <li class="rv"><a href="https://sps.columbia.edu/person/eleni-vrana-0" target="_blank" rel="noopener noreferrer">
-        <span class="lab">Columbia University</span>
-        <b>Faculty profile, School of Professional Studies</b>
-        <span class="go">sps.columbia.edu &#8599;</span></a></li>
-      <li class="rv"><a href="https://www.linkedin.com/in/eleni-vrana-84b903140/" target="_blank" rel="noopener noreferrer">
-        <span class="lab">Professional network</span>
-        <b>LinkedIn</b>
-        <span class="go">linkedin.com &#8599;</span></a></li>
-      <li class="rv"><a href="https://www.einpresswire.com/article/928536792/influential-women-showcase-eleni-vrana-columbia-university-lecturer-inspiring-future-finance-professionals" target="_blank" rel="noopener noreferrer">
-        <span class="lab">Feature &middot; July 2026</span>
-        <b>Influential Women</b>
-        <span class="go">Inspiring Future Finance Professionals &#8599;</span></a></li>
-      <li class="rv"><a href="https://www.24-7pressrelease.com/press-release/535340/marquis-whos-who-honors-eleni-vrana-for-expertise-in-education" target="_blank" rel="noopener noreferrer">
-        <span class="lab">Recognition &middot; June 2026</span>
-        <b>Marquis Who&rsquo;s Who</b>
-        <span class="go">Honored for expertise in education &#8599;</span></a></li>
-    </ul>
-  </section>
+    </figure>
+  </div>
 </div>
 
-<section class="contact" id="contact">
-  <div class="w">
-    <h2>Speaking, teaching and advisory enquiries.</h2>
-    <p>For questions about courses, guest lectures, panels, executive education, or advisory work in corporate finance.</p>
-    <div class="slot">
-      <span class="lab">Contact details to be confirmed</span>
-      <b>Email address and preferred contact route to be added before this page is shared.</b>
+<div class="figs">
+  <div class="figs-in">
+    <div><b>10</b><span class="sc">Academic years<br>teaching at SPS</span></div>
+    <div><b>25</b><span class="sc">Years and more in<br>corporate finance</span></div>
+    <div><b>1998</b><span class="sc">Career begins,<br>Sotheby&rsquo;s New York</span></div>
+    <div><b>3</b><span class="sc">Degrees in business<br>and finance</span></div>
+  </div>
+</div>
+
+<section class="ch" id="book">
+  <div class="ch-in">
+    <div class="ch-num">I</div>
+    <div class="rv">
+      <h2>A book, <em>in progress.</em></h2>
+      <p class="quote">&ldquo;When someone does what they love, they never truly have to work.&rdquo;</p>
+      <span class="sc attrib">Career advice she was given &middot; <i>Influential Women</i>, July 2026</span>
+      <p class="lede">She is co-authoring a book on women&rsquo;s success and happiness, built around the question of how to balance family, work and personal growth rather than choose between them.</p>
+      <p>It is the same question her own record answers in practice. Seventeen years inside a university&rsquo;s finance function. Ten of them taught in the evenings. Neither treated as the thing that had to give.</p>
+      <p style="font-size:15px;color:var(--mid)">Title, co-author, publisher and publication date to be added once confirmed. Nothing has been assumed.</p>
     </div>
   </div>
 </section>
 
-<div class="w">
-  <footer>
-    <div class="foot">
-      <span>Eleni Vrana &middot; Part-Time Lecturer of Finance &middot; New York</span>
-      <span>Draft for review</span>
+<section class="ch" id="teaching">
+  <div class="ch-in">
+    <div class="ch-num">II</div>
+    <div class="rv">
+      <h2>Practice first. <em>Then the classroom.</em></h2>
+      <div class="duo">
+        <div>
+          <p>Eleni Vrana is a <b>Part-Time Lecturer of Finance</b> at the Columbia University School of Professional Studies, where she teaches <b>Introduction to Finance</b> within the <b>Enterprise Risk Management</b> programme. Her course runs on real world examples, projects and case study analyses rather than theory alone.</p>
+          <p>That is possible because she was not teaching finance from a distance. For most of those ten years she was also working inside Columbia&rsquo;s own finance function, and the problems she brought into the room were the ones she had been handed that week.</p>
+        </div>
+        <div>
+          <p>Before Columbia she held several financial leadership positions at <b>Sotheby&rsquo;s New York</b>, moving from credit analysis to client representation to account management. In her last role there she was an Account Manager, managing part of the financial aspects of all of the New York auctions.</p>
+          <p>It is an uncommon foundation for a finance career and a demanding one. At an auction house, valuation, credit and client terms sit inside the same conversation, and a misjudgement is immediate and public.</p>
+        </div>
+      </div>
     </div>
-    <p class="note">This is an unpublished draft prepared for Eleni Vrana&rsquo;s review. It is not indexed by search engines and is not endorsed by, affiliated with, or produced on behalf of Columbia University or Sotheby&rsquo;s. Career facts are drawn from her published professional record and are shown for her verification. Nothing on this page has been added that she has not confirmed.</p>
-  </footer>
-</div>
+  </div>
+</section>
+
+<section class="ch" id="record">
+  <div class="ch-in">
+    <div class="ch-num">III</div>
+    <div class="rv">
+      <h2>The record, <em>in order.</em></h2>
+      <p>Every entry is drawn from her published professional record. Where two sources describe the same period differently, both are noted rather than reconciled.</p>
+      <ol class="rec">
+        <li class="now"><span class="yr">2016 &mdash;</span><span><span class="role">Part-Time Lecturer of Finance</span><span class="org">Columbia University School of Professional Studies</span></span></li>
+        <li><span class="yr">2018 &mdash; 2025</span><span><span class="role">Category Manager</span><span class="org">Columbia University in the City of New York. Columbia&rsquo;s own profile describes this period as leadership in its Finance Department.</span></span></li>
+        <li><span class="yr">2008 &mdash; 2018</span><span><span class="role">Contract Officer</span><span class="org">Columbia University in the City of New York</span></span></li>
+        <li><span class="yr">2004 &mdash; 2008</span><span><span class="role">Account Manager</span><span class="org">Sotheby&rsquo;s, New York</span></span></li>
+        <li><span class="yr">1999 &mdash; 2004</span><span><span class="role">Client Representative</span><span class="org">Sotheby&rsquo;s, New York</span></span></li>
+        <li><span class="yr">1998 &mdash; 1999</span><span><span class="role">Credit Analyst</span><span class="org">Sotheby&rsquo;s, New York</span></span></li>
+        <li><span class="yr">2014</span><span><span class="role">Master&rsquo;s Business Certificate, Finance and Management</span><span class="org">Columbia University</span></span></li>
+        <li><span class="yr">1990</span><span><span class="role">Master of Business Administration</span><span class="org">The George Washington University</span></span></li>
+        <li><span class="yr">1988</span><span><span class="role">Bachelor of Science, Business Administration</span><span class="org">University of San Francisco</span></span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="recognition">
+  <div class="ch-in">
+    <div class="ch-num">IV</div>
+    <div class="rv">
+      <h2>On the <em>public record.</em></h2>
+      <div class="tiles">
+        <article><span class="sc">June 2026</span><h3>Marquis Who&rsquo;s Who</h3><p>Honored for expertise in education.</p></article>
+        <article><span class="sc">July 2026</span><h3>Influential Women</h3><p>Featured as a Columbia University lecturer inspiring future finance professionals.</p></article>
+        <article><span class="sc">Literacy</span><h3>Read Ahead</h3><p>Volunteer with the reading and mentoring programme, pairing adults with New York City public elementary school students for weekly one-to-one sessions.</p></article>
+        <article><span class="sc">Mentoring</span><h3>George Washington University</h3><p>Applied to mentor international MBA students at the programme she completed in 1990.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="elsewhere">
+  <div class="ch-in">
+    <div class="ch-num">V</div>
+    <div class="rv">
+      <h2>Elsewhere.</h2>
+      <ul class="links">
+        <li><a href="https://sps.columbia.edu/person/eleni-vrana-0" target="_blank" rel="noopener noreferrer">
+          <span class="sc">Columbia University</span><b>Faculty profile, School of Professional Studies</b><span class="go">sps.columbia.edu &#8599;</span></a></li>
+        <li><a href="https://www.linkedin.com/in/eleni-vrana-84b903140/" target="_blank" rel="noopener noreferrer">
+          <span class="sc">Professional network</span><b>LinkedIn</b><span class="go">linkedin.com &#8599;</span></a></li>
+        <li><a href="https://www.einpresswire.com/article/928536792/influential-women-showcase-eleni-vrana-columbia-university-lecturer-inspiring-future-finance-professionals" target="_blank" rel="noopener noreferrer">
+          <span class="sc">Feature &middot; July 2026</span><b>Influential Women</b><span class="go">einpresswire.com &#8599;</span></a></li>
+        <li><a href="https://www.24-7pressrelease.com/press-release/535340/marquis-whos-who-honors-eleni-vrana-for-expertise-in-education" target="_blank" rel="noopener noreferrer">
+          <span class="sc">Recognition &middot; June 2026</span><b>Marquis Who&rsquo;s Who</b><span class="go">24-7pressrelease.com &#8599;</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="contact ch" id="contact" style="border-top:0">
+  <div class="ch-in">
+    <div class="ch-num">VI</div>
+    <div class="rv">
+      <h2>Teaching, speaking <em>and advisory.</em></h2>
+      <p class="lede">For questions about courses, guest lectures, panels, executive education, or advisory work in corporate finance.</p>
+      <div class="c-grid">
+        <dl>
+          <div><dt class="sc">Title</dt><dd>Part-Time Lecturer of Finance</dd></div>
+          <div><dt class="sc">Institution</dt><dd>Columbia University School of Professional Studies</dd></div>
+          <div><dt class="sc">Course</dt><dd>Introduction to Finance, Enterprise Risk Management</dd></div>
+          <div><dt class="sc">Based in</dt><dd>New York</dd></div>
+        </dl>
+        <div class="c-note">
+          <b>Contact route to be confirmed</b>
+          <p>No email address or telephone number is published here. None has been supplied, and nothing has been taken from a third-party aggregator. An enquiry form will be connected once she confirms where it should deliver.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="w">
+    <div class="foot">
+      <span class="sc">Eleni Vrana &middot; New York</span>
+      <span class="sc">Draft for review &middot; not indexed</span>
+    </div>
+    <p class="disc">This is an unpublished draft prepared for Eleni Vrana&rsquo;s review. It is not indexed by search engines and is not endorsed by, affiliated with, or produced on behalf of Columbia University or Sotheby&rsquo;s. Career facts are drawn from her published professional record and are shown for her verification. Nothing has been added that she has not confirmed.</p>
+  </div>
+</footer>
 
 <script>
 (function(){
   "use strict";
+  var d=document.documentElement;
+  d.classList.add('js');
+  var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* scroll rail */
+  var rail=document.getElementById('rail');
+  if(rail&&!reduced){
+    var tick=false;
+    var draw=function(){
+      var h=document.documentElement.scrollHeight-window.innerHeight;
+      rail.style.width=(h>0?(window.scrollY/h)*100:0)+'%'; tick=false;
+    };
+    window.addEventListener('scroll',function(){ if(!tick){tick=true;requestAnimationFrame(draw);} },{passive:true});
+    draw();
+  }
+
   if(!('IntersectionObserver' in window)) return;
-  document.documentElement.classList.add('js-rv');
+  d.classList.add('js-rv');
   var els=[].slice.call(document.querySelectorAll('.rv'));
-  function showAll(){els.forEach(function(e){e.classList.add('in')});}
   var io=new IntersectionObserver(function(en){
     en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-  },{rootMargin:'0px 0px -6% 0px',threshold:0.05});
-  function sweep(){ els.forEach(function(e){ var r=e.getBoundingClientRect();
-    if(r.top < innerHeight*0.96 && r.bottom > 0) e.classList.add('in'); }); }
+  },{rootMargin:'0px 0px -7% 0px',threshold:0.04});
   els.forEach(function(e){io.observe(e)});
-  document.addEventListener('visibilitychange',function(){ if(document.visibilityState==='visible'){sweep();setTimeout(sweep,120);} });
+  /* fail open: IO does not fire in a background tab and .rv starts at opacity 0 */
+  function sweep(){ els.forEach(function(e){ var r=e.getBoundingClientRect();
+    if(r.top<innerHeight*0.98&&r.bottom>0) e.classList.add('in'); }); }
+  document.addEventListener('visibilitychange',function(){
+    if(document.visibilityState==='visible'){ sweep(); setTimeout(sweep,140);} });
   window.addEventListener('pageshow',sweep);
   sweep();
-  setTimeout(showAll,9000);
+  setTimeout(function(){ els.forEach(function(e){e.classList.add('in');}); },10000);
 })();
 </script>
 </body></html>
