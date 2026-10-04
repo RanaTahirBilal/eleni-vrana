@@ -96,6 +96,26 @@ h1 em{font-style:italic;color:var(--brass-lt)}
 .plate .k{display:block;color:var(--brass);margin-bottom:12px}
 .plate .t{display:block;font-family:var(--disp);font-size:20px;line-height:1.24;color:var(--ivory);margin-bottom:10px}
 .plate .s{display:block;font-family:var(--mono);font-size:10.5px;line-height:1.7;color:var(--ivory-3)}
+.plate{padding:0;overflow:hidden}
+.plate img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* full width photographic bands */
+.band{margin:0;position:relative}
+.band img{width:100%;height:auto;display:block}
+.band figcaption{position:absolute;left:0;right:0;bottom:0;padding:70px 30px 18px;
+  background:linear-gradient(180deg,transparent 0%,rgba(8,12,10,.55) 45%,rgba(8,12,10,.93) 100%);
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ivory)}
+
+/* plates grid */
+.plates{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+.plates figure{margin:0}
+.plates .fr{position:relative;border:1px solid rgba(243,240,231,.2);overflow:hidden;aspect-ratio:4/3}
+.plates .fr::before{content:"";position:absolute;inset:9px;border:1px solid rgba(198,161,83,.3);pointer-events:none;z-index:1}
+.plates img{width:100%;height:100%;object-fit:cover;display:block}
+.plates figcaption{display:block;margin-top:11px;font-family:var(--mono);font-size:10.5px;
+  line-height:1.6;letter-spacing:.1em;text-transform:uppercase;color:var(--mid)}  /* 6.05:1 on paper */
+@media(max-width:900px){.plates{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.plates{grid-template-columns:1fr}}
 
 /* ══ figures ══ */
 .figs{background:var(--deep-2);border-top:1px solid rgba(243,240,231,.13)}
@@ -234,6 +254,7 @@ footer{background:var(--deep-2);color:var(--ivory-3);padding:34px 0 60px}
     <a href="#teaching">Teaching</a>
     <a href="#record">The Record</a>
     <a href="#recognition">Recognition</a>
+    <a href="#plates">Plates</a>
     <a href="#contact">Contact</a>
   </nav>
 </div>
@@ -249,11 +270,7 @@ footer{background:var(--deep-2);color:var(--ivory-3);padding:34px 0 60px}
       </div>
     </div>
     <figure class="plate lift" style="--d:.9s;margin:0">
-      <div class="in">
-        <span class="sc k">Plate I</span>
-        <span class="t">Portrait</span>
-        <span class="s">4:5 &middot; 1200 &times; 1500 minimum<br>Supplied by her, or licensed</span>
-      </div>
+      <img src="img/portrait.jpg" width="1200" height="1500" alt="Eleni Vrana" fetchpriority="high">
     </figure>
   </div>
 </div>
@@ -300,6 +317,11 @@ footer{background:var(--deep-2);color:var(--ivory-3);padding:34px 0 60px}
   </div>
 </section>
 
+<figure class="band">
+  <img src="img/band-class.jpg" width="2000" height="900" alt="Eleni Vrana teaching an evening class at Columbia" loading="lazy">
+  <figcaption>The evening class &middot; Introduction to Finance</figcaption>
+</figure>
+
 <section class="ch" id="record">
   <div class="ch-in">
     <div class="ch-num">III</div>
@@ -320,6 +342,11 @@ footer{background:var(--deep-2);color:var(--ivory-3);padding:34px 0 60px}
     </div>
   </div>
 </section>
+
+<figure class="band">
+  <img src="img/band-campus.jpg" width="2000" height="900" alt="Eleni Vrana on the Columbia campus at dusk" loading="lazy">
+  <figcaption>Columbia &middot; the walk to a six o&rsquo;clock class</figcaption>
+</figure>
 
 <section class="ch" id="recognition">
   <div class="ch-in">
@@ -355,9 +382,56 @@ footer{background:var(--deep-2);color:var(--ivory-3);padding:34px 0 60px}
   </div>
 </section>
 
-<section class="contact ch" id="contact" style="border-top:0">
+<section class="ch" id="plates">
   <div class="ch-in">
     <div class="ch-num">VI</div>
+    <div class="rv">
+      <h2>The <em>plates.</em></h2>
+      <div class="plates">
+      <figure>
+        <div class="fr"><img src="img/p-lecture.jpg" width="1000" height="750" alt="The lecture room" loading="lazy"></div>
+        <figcaption>Chapter II &middot; The lecture room</figcaption>
+      </figure>
+      <figure>
+        <div class="fr"><img src="img/p-board.jpg" width="1000" height="750" alt="At the board" loading="lazy"></div>
+        <figcaption>Chapter II &middot; At the board</figcaption>
+      </figure>
+      <figure>
+        <div class="fr"><img src="img/p-table.jpg" width="1000" height="750" alt="Seminar table" loading="lazy"></div>
+        <figcaption>Chapter II &middot; Seminar table</figcaption>
+      </figure>
+      <figure>
+        <div class="fr"><img src="img/p-student.jpg" width="1000" height="750" alt="After class" loading="lazy"></div>
+        <figcaption>Chapter II &middot; After class</figcaption>
+      </figure>
+      <figure>
+        <div class="fr"><img src="img/p-office.jpg" width="1000" height="750" alt="Columbia, finance office" loading="lazy"></div>
+        <figcaption>Chapter III &middot; Columbia, finance office</figcaption>
+      </figure>
+      <figure>
+        <div class="fr"><img src="img/p-desk.jpg" width="1000" height="750" alt="Before the six o&rsquo;clock class" loading="lazy"></div>
+        <figcaption>Chapter III &middot; Before the six o&rsquo;clock class</figcaption>
+      </figure>
+      <figure>
+        <div class="fr"><img src="img/p-store.jpg" width="1000" height="750" alt="Sotheby&rsquo;s, the handling room" loading="lazy"></div>
+        <figcaption>Chapter III &middot; Sotheby&rsquo;s, the handling room</figcaption>
+      </figure>
+      <figure>
+        <div class="fr"><img src="img/p-writing.jpg" width="1000" height="750" alt="The book in progress" loading="lazy"></div>
+        <figcaption>Chapter I &middot; The book in progress</figcaption>
+      </figure>
+      <figure>
+        <div class="fr"><img src="img/p-atrium.jpg" width="1000" height="750" alt="New York" loading="lazy"></div>
+        <figcaption>Portrait &middot; New York</figcaption>
+      </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact ch" id="contact" style="border-top:0">
+  <div class="ch-in">
+    <div class="ch-num">VII</div>
     <div class="rv">
       <h2>Teaching, speaking <em>and advisory.</em></h2>
       <p class="lede">For questions about courses, guest lectures, panels, executive education, or advisory work in corporate finance.</p>
@@ -384,6 +458,7 @@ footer{background:var(--deep-2);color:var(--ivory-3);padding:34px 0 60px}
       <span class="sc">Draft for review &middot; not indexed</span>
     </div>
     <p class="disc">This is an unpublished draft prepared for Eleni Vrana&rsquo;s review. It is not indexed by search engines and is not endorsed by, affiliated with, or produced on behalf of Columbia University or Sotheby&rsquo;s. Career facts are drawn from her published professional record and are shown for her verification. Nothing has been added that she has not confirmed.</p>
+    <p class="disc">Every picture of Eleni Vrana on this page is an AI-generated illustration, produced with her approval from a reference photograph. They are not photographs of real events.</p>
   </div>
 </footer>
 
